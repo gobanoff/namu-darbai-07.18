@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
 body {
   font-family: "Michroma", serif;
-  line-height: 60px;
+  line-height: 50px;
   font-size: 25px;
   font-weight: 700;
 }
@@ -28,4 +28,7 @@ body {
 }
 .array7 {
   color: rgb(246, 162, 72);
+}
+.array9 {
+  color: rgb(36, 166, 144);
 }

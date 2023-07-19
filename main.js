@@ -11,6 +11,8 @@ const array4 = document.querySelector(".array4");
 const array5 = document.querySelector(".array5");
 const array6 = document.querySelector(".array6");
 const array7 = document.querySelector(".array7");
+const array8 = document.querySelector(".array8");
+const array9 = document.querySelector(".array9");
 
 let a = [];
 
@@ -92,7 +94,6 @@ array6.innerHTML = "Even array : " + even;
 let aArray = [];
 
 for (let i = 0; i < 30; i++) {
-  
   let numb = rand(5, 25);
   if (i % 2 === 0 && numb > 15) {
     numb = 0;
@@ -102,3 +103,37 @@ for (let i = 0; i < 30; i++) {
 
 console.log(aArray);
 array7.innerHTML = "Array : " + aArray;
+
+// h Uzduotis
+let aray = [];
+
+for (let i = 0; i < 30; i++) {
+  let numb = rand(5, 25);
+  aray.push(numb);
+}
+
+for (let i = aray.length - 1; i >= 0; i--) {
+  if (aray[i] > 10) {
+    aray.splice(i, 1);
+  }
+}
+
+console.log("Atsakymas: " + aray);
+array8.innerHTML = "Atsakymas : " + aray;
+
+// i Uzduotis
+
+let bray = [];
+
+for (let i = 0; i < 30; i++) {
+  let num = rand(5, 25);
+  bray.push(num);
+}
+for (let q = bray.length - 1; q >= 0; q--) {
+  if (q % 2 === 0) {
+    bray.splice(q, 1);
+  }
+}
+
+console.log("Array without even index : ", bray);
+array9.innerHTML = "Array without even index : " + bray;
